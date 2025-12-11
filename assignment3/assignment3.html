@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 3</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.container{
+			display: flex;
+			justify-content: center;
+		}
+		.maindiv{
+			height: 100px;
+			width:  100px;
+			border: 1px solid gray;
+			margin: 2%;
+			display: grid;
+			align-items: center;
+			text-align: center;
+		}
+		.header{
+			background: #d9d9d9;
+		    padding: 1%;
+		    text-align: center;
+		}
+		.footer{
+
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		Hello <span id="dtext"></span>
+	</div>
+	<div class="container">
+		
+		<div class="maindiv" id="p1">Red</div>
+		<div class="maindiv" id="p2">Blue</div>
+		<div class="maindiv" id="p3">Green</div>
+		<div class="maindiv" id="p4">Yellow</div>
+	</div>
+	<div class="container">
+		<input type="text" id="name" placeholder="Enter you name">
+		<button id="submit">Greet</button>
+	</div>
+</body>
+<script>
+	document.getElementById('submit').addEventListener("click",function(){
+		let name = document.getElementById('name').value;
+		document.getElementById('dtext').innerHTML = ', '+name;
+	});
+
+	document.querySelectorAll(".maindiv").forEach(function(div) {
+	    div.addEventListener("click", function() {
+	    	if(!this.style.backgroundColor){
+	        	this.style.backgroundColor = this.innerText; 
+	    	}else{
+	    		this.style.backgroundColor = "";
+	    	}
+	        
+	    });
+	});
+
+	
+</script>
+</html>
