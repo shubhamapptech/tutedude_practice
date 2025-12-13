@@ -50,7 +50,10 @@
 <script>
 	document.getElementById('submit').addEventListener("click",function(){
 		let name = document.getElementById('name').value;
-		document.getElementById('dtext').innerHTML = ', '+name;
+		if(name !==""){
+			name = ', '+name;
+		}
+		document.getElementById('dtext').innerHTML = name;
 	});
 
 	document.querySelectorAll(".maindiv").forEach(function(div) {
