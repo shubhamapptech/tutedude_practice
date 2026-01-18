@@ -1,0 +1,11 @@
+{
+  "name": "assingment6",
+  "version": "1.0.0",
+  "description": "Tutude assignment 6",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "shubham",
+  "license": "ISC"
+}

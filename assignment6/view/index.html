@@ -1,0 +1,35 @@
+<div id="header"></div>
+	<section id="middle">
+		<div class="container">
+			<div id="l_container">
+				<span id="heading1">
+					Revitalize Your Clothes With Expert 
+				</span>
+				<div id="heading2">
+					Laundry Services
+				</div>
+				<span id="general">From premium dry cleaning to swift wash and fold, We deliver care and convinence. Schedule a pickup and rediscover the freshness of your clothers today!</span>
+				<div id="booking">
+					<button>Book A Service Today</button>
+				</div>
+			</div>
+			<div id="r_container">
+				<img src="laundry.webp" width="85%">
+			</div>
+
+		</div>
+		
+	</section>
+<div id="footer"></div>
+
+<script>
+  // Load header
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+
+  // Load footer
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script>

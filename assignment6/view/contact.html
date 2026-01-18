@@ -1,0 +1,104 @@
+<style>
+    .container-box{
+        border: 1px solid #8080806b;
+        /* padding: 1%; */
+        line-height: 2;
+        box-shadow: 0px 2px 20px #80808061;
+        border-radius: 10px;
+        margin-right :5%;
+        min-height: 60vh;
+        
+    }
+    .description{
+        padding: 5%;
+    }
+    .service_container{
+        display: grid;
+    	grid-template-columns: repeat(2, 1fr);
+    	padding: 1% 1% 1% 6%;
+    }
+    .container-box h4{
+        color: blue;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .price{
+        float: right;
+        background: red;
+        top: 0px;
+        position: relative;
+        color: yellow;
+        font-weight: 600;
+        padding: 2%;
+        font-size: 18px;
+    }
+</style>
+<div id="header"></div>
+<section id="middle">
+    <div class="container service_container">
+        <div class="container-box">
+            <span class="price"> Rs 82* /pc</span>
+            <div class="description">
+                <h4>Dry Cleaning </h4>
+                <div class="content">
+                    We use various best available technology and machines to increase the longevity of your favourite..
+                </div>
+                <div id="feature">  
+                    <ul>
+                        <li> Wetcleaning Treatment </li>
+                        <li> Spotting  </li>
+                        <li> Individual Packing </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-box">
+            <span class="price"> Rs 109*/pc</span>
+            <div class="description">
+                <h4> Organic Dry Cleaning </h4> 
+                <div class="content">
+                    Experience the epitome of freshness and eco-conscious care, where sustainability meets immaculate...
+                </div>
+                <div id="feature">  
+                    <ul>
+                        <li> 100% Organic </li>
+                        <li> Wet Cleaning Technology  </li>
+                        <li> Spotting & Repairing  </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-box">
+            <span class="price"> Rs 149* /pc</span>
+            <div class="description">
+                <h4> Leather Jacket Cleaning </h4>
+                <div class="content">
+                    We use the latest technology and advanced machinery to ensure optimal preservation, extending...
+                </div>
+                <div id="feature">  
+                    <ul>
+                        <li> Spot Treatment </li>
+                        <li> Steam Cleaning  </li>
+                        <li> Custom Treatment </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+</section>
+
+
+<div id="footer"></div>
+
+<script>
+  // Load header
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+
+  // Load footer
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script>

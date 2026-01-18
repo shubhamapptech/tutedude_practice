@@ -1,0 +1,43 @@
+<div id="header"></div>
+	<section id="middle">
+		<h1 id="heading1">Did You Know?</h1>
+		<div class="container about">
+			
+			<div id="a_container">
+				<h3 id="heading2">Interesting Facts</h3>
+				<p id="general">
+					Did you know that the Eiffel Tower can be 15 cm taller during the summer? This is due to thermal expansion of the metal.
+				</p>
+			</div>
+			<div id="a_container">
+				<h3 id="heading2">Fun Trivia</h3>
+				<p id="general">
+					The world's largest desert is Antarctica, not the Sahara. It receives less than 250 mm of precipitation annually.
+				</p>
+			</div>
+			<div id="a_container">
+				<h3 id="heading2">Amazing Nature</h3>
+				<p id="general">
+					The Amazon Rainforest produces more than 20% of the world's oxygen, making it a vital part of our planet's ecosystem.
+				</p>
+			</div>
+			<div id="a_container">
+				<h3 id="heading2">Amazing Nature</h2>
+				<p id="general">
+					The Amazon Rainforest produces more than 20% of the world's oxygen, making it a vital part of our planet's ecosystem.
+				</p>
+			</div>
+		</div>
+	</section>
+<div id="footer"></div>
+<script>
+  // Load header
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+
+  // Load footer
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('footer').innerHTML = html);
+</script>
